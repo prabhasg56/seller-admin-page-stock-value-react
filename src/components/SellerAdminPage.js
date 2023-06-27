@@ -45,7 +45,8 @@ const SellerAdminPage = () => {
       setItems([...items, sellingDetails]);
 
       localStorage.setItem(productId, JSON.stringify(sellingDetails));
-      // setTotalExpense(totalExpense+parseInt(sellingPrice))
+      // setTotalExpense(totalExpense+parseInt(sellingPrice));
+
       setTotalExpense((prev) => {
         return prev + parseInt(sellingPrice);
       });
